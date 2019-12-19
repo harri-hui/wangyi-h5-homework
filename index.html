@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>九宫格抽奖</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script>
+    var html = document.querySelector('html');
+    html.style.fontSize = html.offsetWidth / 3.75 + "px";
+    window.onresize = function () {
+      var html = document.querySelector('html');
+      html.style.fontSize = html.offsetWidth / 3.75 + "px";
+    }
+  </script>
+</head>
+<body>
+  <div class="head">h5转盘</div>
+  <div class="main">
+    <div class="pan">
+      <div class="pan__item">
+        <div class="pan__item__reward" id="reward1">华为</div>
+        <div class="pan__item__reward" id="reward2">iPhone X</div>
+        <div class="pan__item__reward" id="reward3">谢谢惠顾</div>
+      </div>
+      <div class="pan__item">
+        <div class="pan__item__reward" id="reward8">手环</div>
+        <div class="pan__item__reward pan__item__reward--active" id="start">开始</div>
+        <div class="pan__item__reward" id="reward4">小熊抱抱</div>
+      </div>
+      <div class="pan__item">
+        <div class="pan__item__reward" id="reward7">格力冰箱</div>
+        <div class="pan__item__reward" id="reward6">电风扇</div>
+        <div class="pan__item__reward" id="reward5">小度音响</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div class="modal__mask"></div>
+      <div class="modal__content">
+        <div class="modal-close" id="close"></div>
+        <div class="modal__content__main" id="price">
+          123
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
